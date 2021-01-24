@@ -92,6 +92,6 @@ class NaviBot():
 
 
 if __name__ == '__main__':
-    rospy.init_node('navirun')
+    rospy.init_node('test')
     bot = NaviBot()
     bot.strategy()
