@@ -43,7 +43,6 @@ class NaviBot():
         goal.target_pose.pose.orientation.w = q[3]
 
         self.client.send_goal(goal)
-        import pdb;pdb.set_trace()
         wait = self.client.wait_for_result()
         if not wait:
             rospy.logerr("Action server not available!")
